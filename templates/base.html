@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,11 +6,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %} {% endblock %}</title>
+    <link rel="stylesheet"href="{% static "app.css"%}">
+
+    
+
     {% block css_files %}    {% endblock %}
+  <style>
+    
+    
+  </style>
+
 </head>
 <body>
+  <header id="main-navigation">
+
+
+
+
+    <nav class="navbar">
+      <div class="navi" > 
+        <div class="col">
+         <a class="navbar-brandtext-success" href= "{% url "starting-page"%}">Royal Vacation</a>
+         
+        </div>
+        <div  >
+          <ul class="nav1" >
+            <div> <li id="space"><a href= "{% url "starting-page"%}">Home </a></li> </div>
+            <div><li id="space"> <a  href="#">Link </a></li></div>
+            <div><li id="space" ><a  <a href="{% url  "post-page"%}">All Post  </a></li> </div>
+         
+          
+            <form class="form" id="space">
+              <input  type="text" placeholder="Search" aria-label="Search">
+            </form>
+
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+
+
+
+
+
+</header>
+
+
+
+
   {% block content %}
   
   {% endblock %}  
 </body>
+<script src=""></script>
 </html>
+{% comment %} video 115 {% endcomment %}

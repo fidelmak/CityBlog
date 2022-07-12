@@ -122,3 +122,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS =( os.path.join(BASE_DIR, "static/"),)
+#love = os.path.join(BASE_DIR, 'static')
+#STATICFILES_DIRS = [ 
+ #   love,
+    
+   
+#]
+# github token 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
+# SYTOP 50 14 29

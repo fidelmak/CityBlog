@@ -55,3 +55,132 @@ ul{
   border-radius:8px;
   
 }
+
+#comment-form {
+  width: 90%;
+  margin:3rem auto;
+  max-width: 40rem;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+  padding: 1rem;
+  color:black;
+}
+
+#comment-form button {
+  font: inherit;
+  color: white;
+  border: 1px solid rgb(219, 105, 11);
+  padding: 0.5rem 1.5rem;
+  border-radius: 6px;
+  background-color: rgb(219, 105, 11);
+  cursor: pointer;
+}
+
+#comment-form button:hover,
+#comment-form button:active{
+  background-color: #54dd05;
+  border-color: #54d05d;
+}
+
+.form-control{
+  margin-bottom: 1rem;
+
+}
+
+.form-control label{
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.form-control input,
+.form-control textarea {
+  display: block;
+  width: 100%;
+  font: inherit;
+  padding: 0.25rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.errorlist {
+  list-style: none;
+  margin: 0.5rem 0;
+  padding: 0;
+  text-combine: red;
+}
+
+.invalid label {
+  color: red;
+}
+
+.invalid input,
+.invalid textarea {
+  border-color: red;
+  background-color: #d34f4f;
+}
+
+#alert {
+  margin: 8rem auto 3rem auto;
+  border: 1px solid #d34f4f;
+  background-color: #d0baba;
+  padding: 1rem;
+  width: 90%;
+  max-width: 40rem;
+}
+#alert a {
+  text-decoration: none;
+  border: 1px solid #d34f4f;
+  background-color: #d34f4f;
+  color: white;
+  padding: 0.25rem 1.5rem;
+  border-radius: 6px;
+}
+
+#comments {
+  width: 90%;
+  margin:3rem auto;
+  max-width: 60rem;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+  padding: 1rem 2rem
+}
+
+#comments ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#comments li {
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #ccc;
+}
+
+#comments li:last-of-type {
+  border-bottom: none;
+}
+
+#comments h2 {
+  color: #232222
+}
+
+#read-later {
+  margin: 2rem 0;
+}
+
+#read-later button {
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 0.5rem 2rem;
+  font: inherit;
+  color: white;
+}
+
+#read-later button:hover,
+#read-later button:active {
+  background-color: white;
+  color: rgb(219, 105, 11);
+}

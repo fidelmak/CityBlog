@@ -1,5 +1,5 @@
 from django import forms
-from .models import Comment 
+from .models import Comment, New
 
 class CommentForm(forms.ModelForm):
     class Meta:
@@ -11,4 +11,16 @@ class CommentForm(forms.ModelForm):
             "text": "Your Comment"
 
         }
+
+class NewForm(forms.ModelForm):
+    class Meta:
+        model= New
+        exclude = ["post"]
+        labels = {
+            "user_name": "your Name",
+            "image": "image",
+            "text": "Your Comment"
+
+        }
+
 

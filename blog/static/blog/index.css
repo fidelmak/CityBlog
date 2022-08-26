@@ -9,17 +9,34 @@ a{
   color:rgb(219, 105, 11);
 
     text-decoration:none;
+  }
 
+.card{
+  display:inline-flex;
+  margin-left: 5rem;
+  
 }
+
 .card-body{
   font-style: italic;
   line-height:2px;
 }
 .cardi{
-  width:120px;
-  height:120px;
-  border-radius:50px;
+  width:20px;
+  height:20px;
+  border-radius:90px;
   
+}
+.card-body{
+  margin:12px;
+  font-weight: 100px;
+  font-size: small;
+}
+.about{
+  padding: 5px;
+  color:#ffffff;
+   font-size:15px; 
+   background-color:rgba(219, 105, 11, 0.281);
 }
 .dis_image{
   width:520px;
@@ -54,4 +71,10 @@ ul{
   padding:0.5rem 0.5rem;
   border-radius:8px;
   
+}
+
+.strd a{
+  color:rgb(241, 237, 237);
+  background-color: grey;
+  padding: 2px;
 }

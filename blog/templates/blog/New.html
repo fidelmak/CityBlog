@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    my blog 
+{% endblock %}
+
+
+{% block css_files %}
+    <link rel="stylesheet" href="{%static "blog/index.css"%}">
+    
+    
+{% endblock %}
+{% block content %}
+<section id="new">
+    <a href="{% url "new"  %}">
+    <div>
+        
+    <img class="dis_image" src="{{New.image.url}}">
+     </div>
+     <div>
+         <h2> uploaded by {{New.user_name}} </h2>
+         <p> {{New.text}} </p>
+     </div>
+
+{% endblock %}
+

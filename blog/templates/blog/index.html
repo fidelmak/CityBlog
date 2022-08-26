@@ -19,12 +19,14 @@
     <header id="header" >
 
 
-        <div class="card" style="width: 18rem;">
+        <div class="card" style="width: 30rem; ">
             
-            <img class="cardi"  src="{% static "blog/images/1.jpg" %}" alt="Paul the author of this blog " >
+            <div>
+                <img class="cardi"style="height:60px; width:60px " src="{% static "blog/images/1.jpg" %}" alt="Paul the author of this blog " >
+            </div>
             <div class="card-body">
               <p> Royal Vacation</p>
-              <p>hi, i am paul i love to blog about python </p>
+              <p>hi, i am paul i love to blog about cities </p>
             </div>
         </div>
 
@@ -40,7 +42,7 @@
     
 </section>
 <section id="latest-post">
-    <h2>Our latest posts </h2>
+    <h2 ><center><i>Our latest posts<i> <center></h2>
     <ul>
         {% for post in posts%}
         {% include "blog/includes/post.html" %}
@@ -48,10 +50,10 @@
     </ul>
 
 </section>
-<section id="about">
-    <h2>what we do </h2>
-    <p>we love traveling and vacation  </p>
-    <p>our goal is to keep on growing as the best location finder</p>
+<section class="about" style=" ">
+   <center> <h5> <i>what we do :
+    we love traveling and vacation
+    our goal is to keep on growing as the best location finder </i></h5> </center>
 </section>
 </div>
 

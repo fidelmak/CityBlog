@@ -1,1 +1,1 @@
-web: gunicorn bookskk.wsgi --log-file -
+web: gunicorn CityBlogz.wsgi --log-file -
